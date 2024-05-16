@@ -1,18 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
 import "./App.css";
-import Home from "./pages/Home";
+import Routes from "./routes/Routes";
+import storeConfig from "./store/storeConfig";
 
 function App() {
-    const route = createBrowserRouter([
-        {
-            path: "/",
-            element: <Home />,
-        },
-    ]);
-
     return (
         <>
-            <RouterProvider router={route}></RouterProvider>
+            <Provider store={storeConfig}>
+                <Routes />
+            </Provider>
         </>
     );
 }

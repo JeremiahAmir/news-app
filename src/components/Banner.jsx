@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 
-const Banner = () => {
+const Banner = ({ title }) => {
     const style = {
         // backgroundImage: "url(https://picsum.photos/1600/400)",
         background:
@@ -13,9 +13,7 @@ const Banner = () => {
         <>
             <div className="banner" style={style}>
                 <Container>
-                    <h1 className="text-white text-center">
-                        Your Digital News Paper
-                    </h1>
+                    <h1 className="text-white text-center">{title}</h1>
                 </Container>
             </div>
         </>

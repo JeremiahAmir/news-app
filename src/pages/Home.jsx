@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <Banner />
+            <Banner title={"Your Digital News Paper"} />
             <News />
         </>
     );
